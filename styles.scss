@@ -1,0 +1,22 @@
+//VARIABLES
+//to refer to any of the values use $varName
+//ex for below variable
+$backgroundColor: #ffffff;
+//use background-color: $backgroundColor;
+
+//COLOR VARS
+//$textColor = white;
+
+
+
+
+
+body{
+  background-color:$backgroundColor ;
+}
+
+section{
+  display: flex;
+
+}
+
