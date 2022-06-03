@@ -6,4 +6,13 @@ section {
   display: flex;
 }
 
+.decorated {
+  display: flex;
+  flex-direction: row;
+}
+.decorated .img {
+  width: 15rem;
+  height: auto;
+}
+
 /*# sourceMappingURL=styles.css.map */
