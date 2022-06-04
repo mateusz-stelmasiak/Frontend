@@ -9,10 +9,29 @@ section {
 .decorated {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+}
+.decorated span{
+  display: flex;
+  column-gap: 1.5rem;
+}
+.decorated:before {
+  content: "";
+  display: flex;
+  width: 2rem;
+  height: 1rem;
+  background-color: #009de3;
 }
 .decorated .img {
   width: 15rem;
   height: auto;
+}
+
+.decorated .logoTextContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /*# sourceMappingURL=styles.css.map */
