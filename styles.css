@@ -453,6 +453,12 @@ header section {
     outline: none;
     opacity: 100%;
 }
+.zaawansowane{
+    color: #02b7ff;
+    margin-top: 2%;
+    margin-left: 12%;
+    font-size: 0.7rem;
+}
 
 footer section {
     background-color: var(--grey);
@@ -505,4 +511,7 @@ footer .menu a:after {
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+}
+.lupa{
+    width: 0.3rem;
 }
