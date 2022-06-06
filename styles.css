@@ -8,6 +8,16 @@ body {
   margin: unset;
   font-family: AirportFont;
 }
+hr {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 1%;
+  background-color: black;
+  height: 0.5px;
+  opacity: 0.3;
+
+
+}
 
 section {
   display: flex;
