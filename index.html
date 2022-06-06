@@ -2,65 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="../styles.css">
-    <style>
-        body {
-            background-color: #ffffff;
-            margin: unset;
-        }
-
-        section {
-            display: flex;
-        }
-
-        .decorated {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-
-        }
-        .decorated span{
-            display: flex;
-            column-gap: 1.5rem;
-        }
-        .decorated:before {
-            content: "";
-            display: flex;
-            width: 2rem;
-            height: 1rem;
-            background-color: #009de3;
-            position: absolute;
-            margin-top: -4rem;
-        
-        }
-        .decorated img {
-            width: 5rem;
-            height: auto;
-        }
-
-        .decorated .logoTextContainer{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-        }
-
-        .decorated .logoTextContainer img{
-            width:10rem;
-            margin-left: -0.2rem;
-        }
-
-        /*# sourceMappingURL=styles.css.map */
-
-    </style>
+    <title>AIRPASSENGER</title>
+    <link  rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<!--http://localhost:63342/frontend/Frontend/index.html?_ijt=qdccoqhj0lk3d5vseu72g376se-->
-<!--topbar-->
-<!--section with decoration on top (the two squares)-->
-<section class="decorated">
+<header>
+    <!--topbar-->
+    <!--section with decoration on top (the two squares)-->
+    <section class="decorated">
     <span>
         <img src="./logo.png">
         <div class="logoTextContainer">
@@ -70,18 +19,31 @@
 
     </span>
 
-    <span>
-        SEARCHBAR TUTAJ
-    </span>
-    <!--logo-->
-    <!--searchbar-->
+        <aside>
+            SEARCHBAR TUTAJ
+        </aside>
+        <!--logo-->
+        <!--searchbar-->
 
-</section>
+    </section>
 
-<!--menu-->
-<section>
+    <!--menu-->
+    <section class="menu">
+        <a href="/AIRNEWS">AIRNEWS</a>
+        <a href="/AIRNEWS">AIRTRENDS</a>
+        <a href="/AIRNEWS">AIRCHALLANGES</a>
+        <a href="/AIRNEWS">AIRKONTAKT</a>
 
-</section>
+    </section>
+    <hr/>
+
+    <section class="icons">
+        <h1>WE CHANGE THE AIRWORLD</h1>
+<!--        to generate a separate icon cut out part of ./icons.png file  (created with https://remove.bg) -->
+<!--        <img src="icons.png">-->
+    </section>
+
+</header>
 
 </body>
 </html>
