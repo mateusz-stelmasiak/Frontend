@@ -333,6 +333,7 @@ header section {
     justify-content: center;
     opacity: 0.5;
     margin: 2rem auto;
+    z-index: 2;
 }
 
 .ads span {
@@ -517,6 +518,8 @@ footer .menu a:after {
 }
 .challenges{
     background-image: url("./trendBanner.png");
+    position: relative;
+    overflow: hidden;
 }
 .challenges .bodySectionContainer{
     display: flex;
@@ -525,9 +528,35 @@ footer .menu a:after {
 
 }
 .challenges .bodySectionText{
-    width: min(100%,25rem);
+    width: min(100%,22rem);
+    position: relative;
+}
+ .bodySectionText:after{
+     content: '';
+     top: 0;
+     width: 120%;
+     height: 120%;
+     position: absolute;
+     background-color: rgb(255, 255, 255);
+     z-index: -1;
+     filter: blur(35px);
 }
 
 .challenges h1{
     color: white;
+}
+
+.challenges:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -108px;
+    width: 60%;
+    height: 645%;
+    background: #fff;
+    transform: rotate(22deg);
+    transform-origin: center center;
+    z-index: -2;
+    right: 6rem;
+    overflow: hidden;
 }
