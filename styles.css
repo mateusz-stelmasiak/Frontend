@@ -435,6 +435,12 @@ header section {
     outline: none;
     opacity: 100%;
 }
+.zaawansowane{
+    color: #02b7ff;
+    margin-top: 2%;
+    margin-left: 12%;
+    font-size: 0.7rem;
+}
 
 footer section {
     background-color: var(--grey);
