@@ -206,13 +206,12 @@ header section{
   text-orientation: mixed;
 }
 
-
-.icons h1{
+.icons h1 {
   margin-top: -1.5%;
   font-weight: 200;
   opacity: 80%;
   letter-spacing: 2px;
-
+}
 .ads{
   margin-top: 10rem;
   background-color: var(--grey);
@@ -225,5 +224,4 @@ header section{
 .ads span{
   font-family: AirportFontSoft,Serif;
   font-size: 1.2rem;
-
 }
