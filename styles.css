@@ -130,9 +130,11 @@ header section{
 }
 
 .newsSection{
-  padding: 2rem 5rem;
   flex-direction: column;
+  padding: 2rem 5rem 20rem;
 }
+
+
 .newsSection h1{
   font-family: AirportFontSoft,Serif;
   color: var(--grey);
@@ -142,10 +144,18 @@ header section{
   text-underline-offset: 0.1rem;
 }
 
-.newsSection .newsItem{
+.newsSection .newsContainer{
   position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  justify-content: space-around;
+  top: 7rem;
+}
+
+.newsSection .newsItem{
   height: 28rem;
-  width: 19vw;
+  width: 250px;
   background-color: var(--very-light-grey);
 }
 
@@ -175,6 +185,7 @@ header section{
   opacity: 0.7;
   text-decoration: underline;
   text-underline-position: under;
+  font-weight: normal;
 }
 .newsSection .newsItem p{
   font-size: 0.7rem;
@@ -192,4 +203,18 @@ header section{
   transform-origin: 0 0;
   writing-mode: vertical-rl;
   text-orientation: mixed;
+}
+
+.ads{
+  margin-top: 10rem;
+  background-color: var(--grey);
+  color: white;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+}
+.ads span{
+  font-family: AirportFontSoft,Serif;
+  font-size: 1.2rem;
 }
