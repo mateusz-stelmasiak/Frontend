@@ -225,3 +225,7 @@ header section{
   font-family: AirportFontSoft,Serif;
   font-size: 1.2rem;
 }
+.airTrends img{
+  width: 100%;
+  height: auto;
+}
