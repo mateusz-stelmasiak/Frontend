@@ -234,7 +234,7 @@ header section {
 }
 
 .newsSection .newsItem {
-    height: 28rem;
+    height: 26rem;
     width: 250px;
     background-color: var(--very-light-grey);
     transition: 300ms;
@@ -302,6 +302,7 @@ header section {
     align-items: center;
     justify-content: center;
     opacity: 0.5;
+    margin: 2rem auto;
 }
 
 .ads span {
@@ -401,4 +402,37 @@ header section {
 .searchbarinput:focus{
     outline: none;
     opacity: 100%;
+}
+
+footer section{
+    background-color: var(--grey);
+
+}
+footer .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter:grayscale(1);
+}
+footer section span{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    align-items: center;
+    transform: scale(0.7);
+    filter: brightness(100);
+    opacity: 0.8;
+}
+footer section span img{
+    filter:grayscale(1) brightness(100);
+    margin-left: -0.3rem;
+}
+
+footer section .logoTextContainer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+footer .menu a:after {
+    right: -0.5rem;
 }
