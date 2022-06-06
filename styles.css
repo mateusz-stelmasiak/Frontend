@@ -249,9 +249,15 @@ header section {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 1rem;
-}
+    column-gap: 1.5rem;
 
+
+
+
+}
+.onlyicons a:hover{
+   transform: scale(1.2)
+}
 .icons {
     flex-direction: column;
     row-gap: 1rem;
@@ -284,5 +290,11 @@ header section {
 .airTrends img{
   width: 100%;
   height: auto;
+}
+.onlyicons a img{
+    width: 1.8rem;
+    filter: contrast(2)
+
+
 }
 
