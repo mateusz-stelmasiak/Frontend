@@ -374,3 +374,20 @@ header section {
     filter: contrast(2);
 }
 
+.searchbar{
+    opacity: 70%;
+    margin-right: 20%;
+    font-size: 85% ;
+    margin-top: -2%;
+    border-top-style: hidden;
+}
+.searchbarinput{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 16rem;
+
+}
+.searchbarinput:focus{
+    outline: none;
+}
