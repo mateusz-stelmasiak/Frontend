@@ -34,7 +34,7 @@ section {
     padding: 2rem 2rem;
 }
 
-section h1{
+section h1 {
     font-family: AirportFontSoft, Serif;
     color: var(--grey);
     font-weight: normal;
@@ -146,7 +146,7 @@ header section {
     src: url('./fonts/Airport-Font-Soft.ttf');
 }
 
-.menu{
+.menu {
     padding: unset;
     margin-top: 0rem;
 }
@@ -160,7 +160,8 @@ header section {
     font-size: 1.3rem;
     font-weight: normal;
 }
-.menu a:hover{
+
+.menu a:hover {
     color: var(--dark-blue);
 }
 
@@ -177,7 +178,7 @@ header section {
 
 }
 
-.menu a span{
+.menu a span {
     transition: 0.3s;
 
     display: inline-block;
@@ -201,6 +202,7 @@ header section {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
+
 .menu a span:hover:after {
     width: 100%;
     left: 0;
@@ -214,7 +216,7 @@ header section {
     position: relative;
 }
 
-.newsSection .newsContainerBackground{
+.newsSection .newsContainerBackground {
     width: 100%;
     height: 80%;
     background-color: var(--light-grey);
@@ -233,12 +235,41 @@ header section {
     z-index: 1;
 }
 
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 20%, 0);
+        transform: translate3d(0, 20%, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
 .newsSection .newsItem {
     height: 26rem;
     width: 250px;
     background-color: var(--very-light-grey);
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1000ms; /* don't forget to set a duration! */
     transition: 300ms;
 }
+.newsSection .newsItem:nth-child(2) {
+    animation-duration: 1200ms; /* don't forget to set a duration! */
+}
+.newsSection .newsItem:nth-child(3) {
+    animation-duration: 1250ms; /* don't forget to set a duration! */
+}
+
+.newsSection .newsItem:nth-child(4) {
+    animation-duration: 1300ms; /* don't forget to set a duration! */
+}
+.newsSection .newsItem:nth-child(5) {
+    animation-duration: 1400ms; /* don't forget to set a duration! */
+}
+
 
 .newsSection .newsItem:hover {
 
@@ -246,8 +277,6 @@ header section {
     filter: dropShadow(10px 10px 10px black);
     transform: scale(1.1);
 }
-
-
 
 
 .newsSection .newsItem img {
@@ -259,16 +288,16 @@ header section {
 .newsSection .newsItem .textContainer {
     padding: 0.5rem 1rem;
 }
+
 .newsSection .newsItem h1 {
     font-family: Arial, serif;
     font-size: 1rem;
     margin-top: 0.5rem;
-    color:var(--blue);
+    color: var(--blue);
     text-decoration: underline;
     text-underline-position: under;
     font-weight: bold;
 }
-
 
 
 .newsSection .newsItem h2 {
@@ -375,7 +404,8 @@ header section {
     width: 100%;
     height: auto;
 }
-.airTrends .airTrendsText{
+
+.airTrends .airTrendsText {
     max-width: 40rem;
     opacity: 0.7;
     margin-right: 30rem;
@@ -386,35 +416,39 @@ header section {
     filter: contrast(2);
 }
 
-.searchbar{
+.searchbar {
     opacity: 0.7;
-    font-size: 85% ;
+    font-size: 85%;
     margin-top: -2%;
     border-top-style: hidden;
 }
-.searchbarinput{
+
+.searchbarinput {
     border-top: none;
     border-left: none;
     border-right: none;
     width: 16rem;
 
 }
-.searchbarinput:focus{
+
+.searchbarinput:focus {
     outline: none;
     opacity: 100%;
 }
 
-footer section{
+footer section {
     background-color: var(--grey);
 
 }
-footer .menu{
+
+footer .menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    filter:grayscale(1);
+    filter: grayscale(1);
 }
-footer section span{
+
+footer section span {
     display: flex;
     flex-direction: row;
     column-gap: 0.5rem;
@@ -423,16 +457,18 @@ footer section span{
     filter: brightness(100);
     opacity: 0.8;
 }
-footer section span img{
-    filter:grayscale(1) brightness(100);
+
+footer section span img {
+    filter: grayscale(1) brightness(100);
     margin-left: -0.3rem;
 }
 
-footer section .logoTextContainer{
+footer section .logoTextContainer {
     display: flex;
     flex-direction: column;
     color: white;
 }
+
 footer .menu a:after {
     right: -0.5rem;
 }
