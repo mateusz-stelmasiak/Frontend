@@ -221,6 +221,7 @@ header section {
 }
 
 
+
 .icons h1 {
     margin-top: -1.5%;
     font-weight: 200;
@@ -257,5 +258,26 @@ header section {
     justify-content: center;
     align-items: center;
     column-gap: 1rem;
+}
+
+
+.icons h1 {
+  margin-top: -1.5%;
+  font-weight: 200;
+  opacity: 80%;
+  letter-spacing: 2px;
+}
+.ads{
+  margin-top: 10rem;
+  background-color: var(--grey);
+  color: white;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+}
+.ads span{
+  font-family: AirportFontSoft,Serif;
+  font-size: 1.2rem;
 }
 
