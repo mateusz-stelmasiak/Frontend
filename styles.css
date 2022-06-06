@@ -520,6 +520,7 @@ footer .menu a:after {
     background-image: url("./trendBanner.png");
     position: relative;
     overflow: hidden;
+    background-size: inherit;
 }
 .challenges .bodySectionContainer{
     display: flex;
@@ -559,4 +560,8 @@ footer .menu a:after {
     z-index: -2;
     right: 6rem;
     overflow: hidden;
+}
+
+.table{
+    background-color: #02b7ff;
 }
