@@ -369,8 +369,7 @@ header section {
 }
 
 .searchbar{
-    opacity: 70%;
-    margin-right: 20%;
+    opacity: 0.7;
     font-size: 85% ;
     margin-top: -2%;
     border-top-style: hidden;
@@ -384,4 +383,5 @@ header section {
 }
 .searchbarinput:focus{
     outline: none;
+    opacity: 100%;
 }
